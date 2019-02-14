@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = mViewHolder.buttonCalcular.getId();
             if (id == R.id.buttonCalcular) {
                 //Logica do Botão calcular
-                this.mViewHolder.buttonCalcular.setBackgroundColor(getColor(R.color.colorPrimary));
                 Double valor = Double.valueOf(this.mViewHolder.editValor.getText().toString());
                 this.mViewHolder.textDollar.setText(String.format("%.2f",valor*3.76));
                 this.mViewHolder.textEuro.setText(String.format("%.2f",valor*4.23));
